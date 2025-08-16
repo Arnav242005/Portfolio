@@ -273,3 +273,67 @@ section h3 {
     justify-content: center;
     align-items: center;
 }
+.skills-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+}
+
+.skills-track span {
+  margin: 0 50px;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ffb347, #87cefa, #9370db);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 5s linear infinite;
+  cursor: pointer;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.skills-track span:hover {
+  transform: scale(1.2);
+  text-shadow: 0 0 15px rgba(255, 118, 136, 0.8),
+               0 0 30px rgba(135, 206, 250, 0.6);
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+/* Left to Right */
+.marquee-left .skills-track {
+  animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Right to Left */
+.marquee-right .skills-track {
+  animation: scroll-right 20s linear infinite;
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
