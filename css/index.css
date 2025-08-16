@@ -377,3 +377,144 @@ section h3 {
     transform: translateX(-50%);
   }
 }
+
+.contact-section {
+  padding: 4rem 2rem;
+  background: #121212;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ff4fa3;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: stretch;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #1c1c1c;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #2a2a2a;
+  color: white;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #ff4fa3;
+  box-shadow: 0 0 8px rgba(255, 79, 163, 0.5);
+}
+
+.btn-submit {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff7eb3, #87cefa);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff4fa3, #5fa8ff);
+}
+
+/* Google Map */
+.contact-map {
+  height: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .contact-map {
+    height: 300px;
+  }
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #0d0d0d;
+  padding: 40px 20px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-left h2 {
+  color: #ff4081;
+  margin-bottom: 8px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff4081;
+}
+
+.footer-right a {
+  font-size: 20px;
+  margin-left: 15px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.footer-right a:hover {
+  color: #ff4081;
+}
