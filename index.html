@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arnav Portfolio</title>
+
+  <!-- Bootstrap (grid/utilities only) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="site-header">
+    <nav class="nav-wrap">
+      <a class="brand" href="#home">AJ</a>
+      <ul class="nav-list">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a href="CV.pdf" class="nav-link active"  download="Resume.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <main id="home" class="hero container-xxl">
+    <div class="row align-items-center g-5">
+      <!-- Profile Card -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="card-box">
+          <div class="avatar">
+            <!-- replace with your photo -->
+            <img src="images/your-photo.jpg" alt="Arnav Jadhav" />
+          </div>
+
+          <h2 class="name">Arnav Jadhav</h2>
+          <p class="tagline">Full Stack Developer</p>
+
+          <p class="desc">
+            I help businesses turn ideas into fast, functional and future-ready products using
+            <span class="hilite">Spring Boot</span>, <span class="hilite">PHP</span>, and <span class="hilite">React</span>.
+          </p>
+
+          <div class="socials">
+            <a aria-label="GitHub" href="https://github.com/Arnav242005" target="_blank"><i class="fab fa-github"></i></a>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/arnav-jadhav-989175250/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a aria-label="Twitter" href="https://x.com/jadhav_arn41116?t=Rk45zOY9BftJ1q1CpAuGTw&s=09" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a aria-label="Instagram" href="https://www.instagram.com/javocado.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intro / Typing + CTA -->
+      <div class="col-lg-7" data-aos="fade-left">
+        <h1 class="hero-title">
+          <span>Arnav</span> <span>Jadhav</span>
+        </h1>
+
+        <!-- your typing JS can target this -->
+        <p class="typed text-content"></p>
+
+        <div class="about-bubble">
+          <em>
+            As a Full Stack Developer with deep expertise in Java Spring Boot, PHP, and React, I help individuals and
+            businesses turn their ideas into fast, functional, and future-ready digital products. From robust backend
+            systems to engaging frontend experiences, I bring a problem-solving mindset and a passion for clean, scalable 
+            code to every project I take on.
+          </em>
+        </div>
+
+        <a href="#contact" class="btn-connect">Connect with me</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Dummy sections for smooth nav (fill later) -->
+  <section id="about" class="section container-xxl" data-aos="fade-up">
+    <h3 class="section-title">About</h3>
+    <p class="about-text">
+    I gladly navigate the digital world while embracing the essence of an IT student,
+    revealing limitless opportunities..
+  </p>
+
+  <!-- Skills Marquee -->
+  <div class="skills-marquee marquee-left">
+    <div class="skills-track">
+       <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>Python</span>
+      <span>Hibernate</span>
+      <!-- duplicate for smooth loop -->
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>Python</span>
+      <span>Hibernate</span>
+    </div>
+  </div>
+
+  <!-- Skills Marquee Row 2 (Right to Left) -->
+  <div class="skills-marquee marquee-right">
+    <div class="skills-track">
+      <span>C</span>
+      <span>C++</span>
+      <span>SQL</span>
+      <span>ORM</span>
+      <span>Git</span>
+      <span>Bootstrap</span>
+      <span>GitHub</span>
+      <span>Enterprise Java</span>
+      <!-- duplicate for smooth loop -->
+      <span>C</span>
+      <span>C++</span>
+      <span>SQL</span>
+      <span>ORM</span>
+      <span>Git</span>
+      <span>Bootstrap</span>
+      <span>GitHub</span>
+      <span>Enterprise Java</span>
+    </div>
+  </div>
+  </section>
+
+<section id="projects" class="section container-xxl">
+  <h3 class="section-title" data-aos="fade-up">Recent Projects</h3>
+
+  <div class="projects-card">
+    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Annadata Setu</h3>
+      <p>
+        A platform connecting farmers and consumers directly,
+        ensuring fair trade and eliminating middlemen. (In Development)
+      </p>
+      <div class="tech-stack">
+        <span>React</span>
+        <span>Spring Boot</span>
+        <span>MySQL</span>
+        <span>Web Sockets</span>
+        <span>Spring AI</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank">View</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+      <h3>BlogShelf</h3>
+      <p>
+        A blogging platform where users can write, edit, and share blogs
+        with a rich text editor and categorized sections.
+      </p>
+      <div class="tech-stack">
+        <span>React</span>
+        <span>MockAPI</span>
+        <span>EmailJS</span>
+      </div>
+      <div class="project-links">
+        <a href="https://blogshelf.vercel.app/" target="_blank">View</a>
+        <a href="https://github.com/Arnav242005/Blogshelf" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+      <h3>CodeX</h3>
+      <p>
+        An online collaborative code editor for multiple languages
+        with real-time compilation and execution.
+      </p>
+      <div class="tech-stack">
+        <span>Enterprise Java</span>
+        <span>Hibernate</span>
+        <span>MVC</span>
+      </div>
+      <div class="project-links">
+        <a href="#" target="_blank">View</a>
+        <a href="https://github.com/Arnav242005/CodeX" target="_blank">GitHub</a>
+      </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact-section">
+  <h2 class="section-title">Contact Me</h2>
+  
+  <div class="contact-container">
+    <!-- Left: Form -->
+    <div class="contact-form">
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Right: Google Map -->
+    <div class="contact-map">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d504.02270236881526!2d72.85514072981617!3d19.011469800225274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssakar%20panchayat%20wadala!5e0!3m2!1sen!2sin!4v1755372300945!5m2!1sen!2sin" width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+<!-- ===== Footer Section ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Left side -->
+    <div class="footer-left">
+      <h2>AJ</h2>
+      <p>© 2025 AJ. All Rights Reserved.</p>
+    </div>
+
+    <!-- Center links -->
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="CV.pdf" download>CV</a>
+    </div>
+
+    <!-- Right side social icons -->
+    <div class="footer-right">
+      <a href="https://github.com/Arnav242005" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/arnav-jadhav-989175250/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:jadhavarnav58@gmail.com">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+
+    // Smooth active link highlight on scroll
+    const links = document.querySelectorAll('.nav-link');
+    const sections = [...document.querySelectorAll('main, section')];
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === `#${e.target.id}`));
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(s => io.observe(s));
+  </script>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
